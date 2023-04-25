@@ -12,7 +12,7 @@ namespace ListaDeAfazeres.Models
         public string Content{ get; set; }
         [Required]
         public bool IsComplete { get; set; }
-
+        
         public List<Notes> Notes { get; set; }
 
 
