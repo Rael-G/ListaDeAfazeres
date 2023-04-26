@@ -7,9 +7,9 @@ namespace ListaDeAfazeres.Data
 	{
 		public AppDbContext (DbContextOptions<AppDbContext> options) : base ( options) { }
 
-		DbSet<ToDo> ToDo { get; set; }
+		public DbSet<ToDo> ToDo { get; set; }
 
-		DbSet<Notes> Notes { get; set; }
+		public DbSet<Notes> Notes { get; set; }
 
 	}
 }

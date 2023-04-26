@@ -13,7 +13,13 @@ namespace ListaDeAfazeres.Models
         [Required]
         public bool IsComplete { get; set; }
         
-        public List<Notes> Notes { get; set; }
+        public ICollection<Notes> Notes { get; set; } = new List<Notes>();
+
+        public void AddNote (Notes note)
+        {
+            Notes.Add (note);
+        }
+
 
 
     }
